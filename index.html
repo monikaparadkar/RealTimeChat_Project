@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatNow - Realtime Node Socket.io Chat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img class="logo" src="icon.png" alt="ChatNow Logo"> 
+            <h1>ChatNow</h1>
+        </div>
+    </nav>
+    <div id="chat-container">
+        <ul id="users-list"></ul>
+        <div id="typing-status"></div>
+        <div class="container"></div>
+        <form id="send-container">
+            <input type="text" id="messageInp" autocomplete="off" placeholder="Type a message..." />
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
